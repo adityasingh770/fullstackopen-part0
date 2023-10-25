@@ -2,12 +2,10 @@ sequenceDiagram
     participant browser
     participant server
 
-    ```mermaid
-    graph TD;
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa;
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     activate server
-    server-->>browser: HTML document;
-    deactivate server```
+    server-->>browser: HTML document
+    deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
